@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CacheLearnProject.Models.Book>
+
+@{
+    ViewBag.Title = "LinkToAuthorsBooks";
+}
+<div class="jumbotron">
+    <h2 class="text-center">@ViewBag.Author's books</h2>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Book Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Name</td>
+                <td>@book.Price</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

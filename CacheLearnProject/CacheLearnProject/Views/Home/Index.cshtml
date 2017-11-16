@@ -21,7 +21,7 @@
             {
                 <tr>
                     <td>@author.Id</td>
-                    <td>@author.FirstName @author.LastName</td>
+                    <td>@Html.ActionLink(author.FirstName+ " " + author.LastName, "LinkToAuthorsBooks", author)</td>
                 </tr>
             }
         </tbody>
