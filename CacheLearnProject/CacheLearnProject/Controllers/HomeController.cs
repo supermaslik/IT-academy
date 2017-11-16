@@ -14,10 +14,10 @@ namespace CacheLearnProject.Controllers
         {
             using (var db = new DataBaseConnection())
             {
-                var Autors = db.Autors;
-                if (Autors == null)
+                var Authors = db.Authors.ToList();
+                if (Authors == null)
                     return HttpNotFound();
-                return View(Autors);
+                return View(Authors);
             }
         }
     }

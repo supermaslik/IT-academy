@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CacheLearnProject.Models
 {
-    public class Autor
+    public class Author
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

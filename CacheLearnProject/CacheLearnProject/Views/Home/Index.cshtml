@@ -1,15 +1,29 @@
 ﻿@using CacheLearnProject.Models;
-@model IEnumerable<Autor>
+@model IEnumerable<Author>
 @{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
-    <h3>Aurot list</h3>
+    <h3 class="text-center">Author list</h3>
 </div>
 
-@foreach(var autor in Model)
-{
-    <p>@autor</p>
-    <br />
-}
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Author id</th>
+                <th>Author Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var author in Model)
+            {
+                <tr>
+                    <td>@author.Id</td>
+                    <td>@author.FirstName @author.LastName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

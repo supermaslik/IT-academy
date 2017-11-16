@@ -108,3 +108,7 @@ D:\GitGlobal\IT-academy\CacheLearnProject\CacheLearnProject\bin\Newtonsoft.Json.
 D:\GitGlobal\IT-academy\CacheLearnProject\CacheLearnProject\obj\Debug\CacheLearnProject.csprojResolveAssemblyReference.cache
 D:\GitGlobal\IT-academy\CacheLearnProject\CacheLearnProject\obj\Debug\CacheLearnProject.dll
 D:\GitGlobal\IT-academy\CacheLearnProject\CacheLearnProject\obj\Debug\CacheLearnProject.pdb
+D:\Git\GitHub\IT-academy\CacheLearnProject\CacheLearnProject\bin\EntityFramework.dll
+D:\Git\GitHub\IT-academy\CacheLearnProject\CacheLearnProject\bin\EntityFramework.SqlServer.dll
+D:\Git\GitHub\IT-academy\CacheLearnProject\CacheLearnProject\bin\EntityFramework.xml
+D:\Git\GitHub\IT-academy\CacheLearnProject\CacheLearnProject\bin\EntityFramework.SqlServer.xml
