@@ -7,7 +7,16 @@
     <h1 class="text-center">ASP.NET First Test Application</h1>
 </div>
 
-<div class="container">
+<div class="container text-center">
     <p>@Model</p>
 
+        <ul class="pagination text-center" style="margin:auto">
+            <li>@Html.ActionLink("Previous", "PreviousPage")</li>
+            <li><a href="1">1</a></li>
+            <li><a href="2">2</a></li>
+            <li><a href="3">3</a></li>
+            <li><a href="4">4</a></li>
+            <li><a href="5">5</a></li>
+            <li>@Html.ActionLink("Next","NextPage")</li>
+        </ul>
 </div>

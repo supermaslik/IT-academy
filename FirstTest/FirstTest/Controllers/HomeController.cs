@@ -7,12 +7,24 @@ using System.Web.Mvc;
 namespace FirstTest.Controllers
 {
     [RoutePrefix("Home")]
-    [Route("{action}/{page?}")]
     public class HomeController : Controller
     {
-        public ActionResult Index(int page = 0)
+        [Route("Index/page/{page?}")]
+        public ActionResult Index(int page = 1)
         {
-            return View();
+            return View(page);
+        }
+
+
+
+
+        public ActionResult PreviousPage()
+        {
+            return RedirectToAction("Index", 1);
+        }
+        public ActionResult NestPage()
+        {
+            return RedirectToAction("Index", 1);
         }
     }
 }
