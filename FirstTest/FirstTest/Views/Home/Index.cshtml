@@ -1,6 +1,8 @@
 ﻿@model int
 @{
     ViewBag.Title = "Home Page";
+    var Next_page = Model + 1;
+    var Previous_page = Model - 1;
 }
 
 <div class="jumbotron">
@@ -11,12 +13,12 @@
     <p>@Model</p>
 
         <ul class="pagination text-center" style="margin:auto">
-            <li>@Html.ActionLink("Previous", "PreviousPage")</li>
+            <li><a href="@Previous_page">Previous</a></li>
             <li><a href="1">1</a></li>
             <li><a href="2">2</a></li>
             <li><a href="3">3</a></li>
             <li><a href="4">4</a></li>
             <li><a href="5">5</a></li>
-            <li>@Html.ActionLink("Next","NextPage")</li>
+            <li><a href="@Next_page">Next</a></li>
         </ul>
 </div>

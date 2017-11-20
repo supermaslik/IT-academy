@@ -12,19 +12,9 @@ namespace FirstTest.Controllers
         [Route("Index/page/{page?}")]
         public ActionResult Index(int page = 1)
         {
+            page = (page < 1) ? 1 : page;
+            page = (page > 5) ? 5 : page;
             return View(page);
-        }
-
-
-
-
-        public ActionResult PreviousPage()
-        {
-            return RedirectToAction("Index", 1);
-        }
-        public ActionResult NestPage()
-        {
-            return RedirectToAction("Index", 1);
         }
     }
 }
