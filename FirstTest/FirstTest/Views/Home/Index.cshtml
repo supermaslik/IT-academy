@@ -10,7 +10,7 @@
 </div>
 
 <div class="container text-center">
-    <p>@Model</p>
+    <p>@Html.Action("ShowData", "Home", new { page = 1})</p>
 
         <ul class="pagination text-center" style="margin:auto">
             <li><a href="@Previous_page">Previous</a></li>

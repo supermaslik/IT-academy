@@ -51,3 +51,7 @@ D:\Git\GitHub\IT-academy\FirstTest\FirstTest\bin\Newtonsoft.Json.xml
 D:\Git\GitHub\IT-academy\FirstTest\FirstTest\obj\Debug\FirstTest.csprojResolveAssemblyReference.cache
 D:\Git\GitHub\IT-academy\FirstTest\FirstTest\obj\Debug\FirstTest.dll
 D:\Git\GitHub\IT-academy\FirstTest\FirstTest\obj\Debug\FirstTest.pdb
+D:\Git\GitHub\IT-academy\FirstTest\FirstTest\bin\EntityFramework.dll
+D:\Git\GitHub\IT-academy\FirstTest\FirstTest\bin\EntityFramework.SqlServer.dll
+D:\Git\GitHub\IT-academy\FirstTest\FirstTest\bin\EntityFramework.xml
+D:\Git\GitHub\IT-academy\FirstTest\FirstTest\bin\EntityFramework.SqlServer.xml
