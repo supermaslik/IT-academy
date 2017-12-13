@@ -6,11 +6,13 @@
 }
 
 <div class="jumbotron">
-    <h1 class="text-center">ASP.NET First Test Application</h1>
+    <h1 class="text-center">ASP.NET Second Test Application</h1>
+    <small style="margin-left:30px">3 images info on a page</small>
 </div>
 
-<div class="container text-center">
-    <p>@Html.Action("ShowData", "Home", new { page = 1})</p>
+<div class="container-fluid text-center">
+
+    <p>@Html.Action("ShowData", new { page = 1})</p>
 
         <ul class="pagination text-center" style="margin:auto">
             <li><a href="@Previous_page">Previous</a></li>

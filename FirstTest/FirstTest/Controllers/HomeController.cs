@@ -17,14 +17,14 @@ namespace FirstTest.Controllers
             page = (page > 5) ? 5 : page;
             return View(page);
         }
-
+        [Route("Data/{page?}")]
         [ChildActionOnly]
         public ActionResult ShowData(int page = 1)
         {
-            ImageLinkInfo Image = null;
+            List<ImageLinkInfo> Image = new List<ImageLinkInfo>();
             using (ImageDB db = new ImageDB())
             {
-                Image = db.ImageLinksInfo.First();
+                Image = db.ImageLinksInfo.ToList();
             }
                 return PartialView(Image);
         }
