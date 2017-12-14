@@ -1,5 +1,14 @@
 ﻿@model List<FirstTest.Models.ImageLinkInfo>
 
+@if(Model.Count == 0)
+{
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+            <p>Nothing on a page</p>
+        </div>
+    </div>
+}
+
 
 @foreach (var obj in Model)
 {
@@ -11,19 +20,24 @@
     </div>
 
     <div class="row">
-        <div class="col-md-offset-2 col-md-8 col-md-offset-2">
-            <img src=@obj.ImageUrl class="img-responsive img-thumbnail">
+        <div class="col-md-7">
+            <p>@obj.Description</p>
+        </div>
+
+        <div class="col-md-5">
+            <img src=@obj.ImageUrl class="img-responsive img-thumbnail pull-left">
         </div>
     </div>
 
     <div class="row">
-        <div style="margin-top:10px;" class="col-md-offset-2 col-md-8 col-md-offset-2">
-            <p>@obj.Description</p>
+            @*<input type="button" class="btn btn-info" value="Image site" onclick="location.href = @obj.SiteUrl;" />*@
+            <a href=@obj.SiteUrl class="btn btn-info" role="button">Site</a>
+            <a href=@obj.SiteUrl class="btn btn-primary" role="button">Edit</a>
+            <a href=@obj.SiteUrl class="btn btn-danger" role="button">Delete</a>
+           <br />
             <br />
-            <a href=@obj.SiteUrl>Image Site</a>
         </div>
     </div>
-</div>
     <br />
     <br />
 }
